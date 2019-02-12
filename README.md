@@ -1,5 +1,5 @@
 # python_upload_spreadsheet
-Projeto com examplo de upload de planilha para cálculos
+Projeto com exemplo de upload de planilha para cálculos
 
 Aplicativo com funcionalidades para importação de dados com Python, Django e Pandas
 
@@ -13,7 +13,7 @@ O projeto é um aplicativo usando Django 2.1 e Pandas para cálculos em planilha
 
 ## Preparando o projeto
 
-Para executar o projeto é necessário criar uma virtualenv para isaolar as dependências:
+Para executar o projeto é necessário criar uma virtualenv para isolar as dependências:
 ```
 mkvirtualenv -p python3.6 python_upload_spreadsheet
 workon python_upload_spreadsheet
@@ -33,7 +33,7 @@ docker start postgres-docker
 ```
 
 ## Para executar o projeto
-Depois de executar o passo acima executar os seguintes comandos na raiz do projeto:
+Depois de realizar os passos acima executar os seguintes comandos na raiz do projeto:
 Para criar o banco com a tabela:
 ```
 python manage.py migrate
