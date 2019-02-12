@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Upload</title>
+		<style>
+			#main{
+			  width: 50%;
+			  margin: auto;
+			  padding: 10px;
+			  text-align: center;
+			}
+		</style>
+    </head>
+
+	<body>
+		<div id="main">
+
+				<h1>Select spreadsheet file</h1>
+				{% if msg %}
+					<h4 style="color:red;">{{ msg }}</h4>
+				{% endif %}
+				<form method = "POST" enctype = "multipart/form-data">
+					{% csrf_token %}
+					<input type="file" name="spreadsheet_file" />
+					<input type="submit"/>
+				</form>
+				{% if total_revenue > 0 %}
+					<h4 style="color:blue;">Value of total revenue : {{ total_revenue }}</h4>
+				{% endif %}
+
+		</div>
+	</body>
+
+</html>
